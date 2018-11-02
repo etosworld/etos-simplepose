@@ -11,7 +11,7 @@
 
 -  running this model with a normal pc webcam can achieve 15fps+ on [ETOS](https://etos.world) system, with high accuracy.
 
-##3 Training
+### Training
 
 ### Dependencies:
 
