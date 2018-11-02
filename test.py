@@ -121,11 +121,10 @@ def run_with_frozen_pb(img_path, input_w_h, frozen_graph, output_node_names):
         key = cv2.waitKey(10)
         if key == 27:
           break
-        image_0 = cv2.imread(img_path)
+        #image_0 = cv2.imread(img_path)
         h, w, _ = image_0.shape
         image_ = cv2.resize(image_0, (input_w_h, input_w_h), interpolation=cv2.INTER_AREA)
 
-      #with tf.Session(config=config) as sess:
         import time
         start = time.time()
         heatmaps = sess.run(output, feed_dict={image: [image_]})
@@ -153,7 +152,7 @@ def run_with_frozen_pb(img_path, input_w_h, frozen_graph, output_node_names):
            #print(X[k],Y[k])
            cv2.circle(image_,(X[k], Y[k]), 1, (0,255,0),-1)
         image_p = cv2.resize(image_, (w, h), interpolation=cv2.INTER_AREA)
-        #cv2.imshow("input", image_p)
+        cv2.imshow("input", image_p)
         cv2.imwrite("test/point_%d.jpg"%i, image_p)
         i = i+1
 
