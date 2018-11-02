@@ -1,0 +1,11 @@
+tensorflow-gpu
+matplotlib
+numpy
+scipy
+sklearn
+pandas
+tensorpack
+requests
+opencv-python
+tfcoreml
+configparser
