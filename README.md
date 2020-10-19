@@ -1,7 +1,7 @@
 
 ### etos-simplepose
 
-- simple pose estimation for [ETOS](https://etos.world) ecosystem.
+- simple pose estimation.
 
 - for real time and high efficiency: 
    
